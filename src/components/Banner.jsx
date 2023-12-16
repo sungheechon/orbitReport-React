@@ -1,3 +1,6 @@
+import "./styling.css";
+
+
 const Banner = () => {
     
     return (
@@ -7,4 +10,5 @@ const Banner = () => {
         </>
     )
 }
+
 export default Banner;

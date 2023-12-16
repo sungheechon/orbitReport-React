@@ -1,3 +1,4 @@
+import "./styling.css";
 import satData from "./satData";
 
 
@@ -14,7 +15,6 @@ const Table = ({ sat }) => {
     );
   });
 
-
   return (
     <table>
       <thead>
@@ -30,8 +30,6 @@ const Table = ({ sat }) => {
       </tbody>
     </table>
   );
-
-
 
 };
 

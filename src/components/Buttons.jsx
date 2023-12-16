@@ -1,3 +1,4 @@
+import "./styling.css";
 import satData from "./satData";
 
 
@@ -12,13 +13,11 @@ const Buttons = ({ filterByType, setSat, displaySats }) => {
   });
 
   return (
-    <div>
+    <div className="flex-container">
       {Button}
-      <button onClick={ () => setSat={setSat}}>All Orbits</button>
+      <button onClick={() => setSat(satData)}>All Orbits</button>
     </div>
   );
-
-
 
 };
 
