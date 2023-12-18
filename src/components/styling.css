@@ -5,7 +5,7 @@ p {
 }
 
 button {
-  background-color: #5c94ce;
+  background-color: rgb(36, 6, 124);
   border-radius: 15px;
   color: white;
   padding: 15px 32px;
@@ -35,15 +35,17 @@ th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #354a5f;
+  background-color: rgb(54, 15, 173);
   color: white;
   text-align: center;
 }
+
 tr:nth-child(even) {
-  background-color: #ddd;
+  background-color: rgb(203, 212, 245);
 }
+
 tr:hover {
-  background-color: #cacacb;
+  background-color: rgb(182, 191, 225);
 }
 
 td {
@@ -54,7 +56,33 @@ td {
 header {
   padding: 50px;
   text-align: center;
-  background: #5c94ce;
+  background-image: linear-gradient(black, black, rgb(36, 6, 124));
   color: white;
   font-size: 60px;
+}
+
+
+/* https://dev.to/0shuvo0/pure-css-infinite-spacegalaxy-with-just-one-div-4o02 */
+.bg-galaxy {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  height: 1px;
+  width: 1px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: -24vw -44vh 2px 2px #fff, 38vw -4vh 0px 0px #fff, -20vw -48vh 1px 2px #fff, -39vw 38vh 3px 1px #fff, -42vw -11vh 0px 3px #fff, 12vw 15vh 3px 3px #fff, 42vw 6vh 3px 2px #fff, -8vw 9vh 0px 2px #fff, 34vw -38vh 1px 0px #fff, -17vw 45vh 3px 1px #fff, 22vw -36vh 3px 2px #fff, -42vw 1vh 1px 0px #fff;
+  animation: zoom 11s alternate infinite;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1.5);
+  }
 }

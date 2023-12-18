@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+
+.bg-galaxy {
+  position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
