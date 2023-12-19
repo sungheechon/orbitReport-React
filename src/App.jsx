@@ -8,6 +8,7 @@ function App() {
 
   const [sat, setSat] = useState(satData);
   const displaySats = [...new Set(satData.map((data) => data.orbitType))];  //// orbitType for 3 buttons, Low, Medium, High
+  ////  ...new to create an array
 
   const filterByType = (currentType) => {
     const displaySats = satData.filter((newSatDisplay) => {
@@ -18,7 +19,7 @@ function App() {
 
   return (
     <>
-      <Banner />
+      <Banner sat={sat} />
       <Buttons
         filterByType={filterByType}
         setSat={setSat}

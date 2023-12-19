@@ -1,11 +1,12 @@
 header,
+
 p {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
 button {
-  background-color: rgb(36, 6, 124);
+  background-color: black;
   border-radius: 15px;
   color: white;
   padding: 15px 32px;
@@ -23,10 +24,15 @@ button {
 }
 
 table {
-  border: 2px solid #354a5f;
+  border: 2px solid #5d5d5d;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 90%;
+  background-color: #fff;
+  opacity: 0.9;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 th {
@@ -35,17 +41,25 @@ th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: rgb(54, 15, 173);
+  background-color: black;
+  opacity: .9;
   color: white;
   text-align: center;
 }
 
 tr:nth-child(even) {
-  background-color: rgb(203, 212, 245);
+
+  background-color: black;
+  opacity: 0.5;
+  color: white;
+
+
 }
 
 tr:hover {
-  background-color: rgb(182, 191, 225);
+  background-color: black;
+  color: white;
+  opacity: 0.3;
 }
 
 td {
@@ -56,9 +70,9 @@ td {
 header {
   padding: 50px;
   text-align: center;
-  background-image: linear-gradient(black, black, rgb(36, 6, 124));
   color: white;
   font-size: 60px;
+
 }
 
 
@@ -79,10 +93,36 @@ header {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.25);
   }
+
   100% {
     transform: scale(1.5);
   }
 }
+
+
+
+
+
+.spinning-Low {
+  animation: spin 10s linear infinite;
+}
+.spinning-Medium {
+  animation: spin 5s linear infinite;
+}
+.spinning-High {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(340deg);
+  }
+}
+

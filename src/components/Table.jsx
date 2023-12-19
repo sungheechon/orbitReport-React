@@ -26,7 +26,7 @@ const Table = ({ sat }) => {
         </tr>
       </thead>
       <tbody>
-        {SatRows}
+        {SatRows} 
       </tbody>
     </table>
   );
